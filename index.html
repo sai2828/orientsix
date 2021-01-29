@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Starbucks website landing page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+  <div class="circle"></div>
+<header>
+  <a href="#" ><img src="Img/logo-starbucks.png" class="logo"></a>
+  <ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#home">Menu</a></li>
+<li><a href="#home">What's New</a></li>
+<li><a href="#home">Contact</a></li>
+  </ul>
+</header>
+<div class="content">
+  <div class="textbox">
+    <h2>It's not just Dumblings <br> It's <span>Oriental Six</span></h2>
+    <p>Lorem ispum solor sit amet, consectetur adipisicing elit, sed do eisusmod
+      tempor inciddunt ut labore et lore magna aliqua. Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      <a href="#">Leran More</a>
+    </div>
+      <div class="imgBox">
+        <img src="img/Front1-box.png" alt="greendrink" class="starbucks">
+      </div>
+</div>
+<ul class="thumb">
+  <li><img src="img/thumb1.png" onclick="imgSlider('img/Front-box.png');changeCircleColor('#017143')"></li>
+  <li><img src="img/thumb2.png" onclick="imgSlider('img/Back-box.png');changeCircleColor('#DAA520')"></li>
+  <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"></li>
+</ul>
+<ul class="sci">
+<li><a href="#"><img src="img/logo-facebook.png"></a></li>
+<li><a href="#"><img src="img/logo-instagram.png"></a></li>
+<li><a href="#"><img src="Img/logo-twitter.png"></a></li>
+</ul>
+</section>
+
+<footer>@ SK Small Project</footer>
+
+<script type="text/javascript">
+function imgSlider(anything){
+  document.querySelector('.starbucks').src = anything;
+}
+
+function changeCircleColor(color){
+  const circle = document.querySelector('.circle');
+  circle.style.background = color; 
+} 
+
+</script>
+</body>
+</html>
